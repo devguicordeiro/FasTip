@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FasTip</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="shortcut icon" href="images/">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <script defer src="script.js"></script>
+    </head>
+<body>
+    <div class="main-container">
+        <div class="calculator">
+            <h3>FasTip</h3>
+            <p class="border-bottom"></p>
+            </br>
+            <label for="amount">Bill Amount</label>
+            </br>
+            <button><i class="fas fa-dollar-sign"></i></button>
+            <input type="number" name="AmountInput" id="amount">
+            </br>
+            </br>
+            <label for="guests">Number of Guests</label>
+            </br>
+            <button><i class="fas fa-male"></i></button>
+            <input type="number" name="GuestsInput" id="guests">
+            </br>
+            </br>
+            <label for="quality">Service Quality</label>
+            </br>
+            <select name="QualityInput" id="quality">
+                <option disabled selected value="0">Choose an option...</option>
+                <option value="0.3">30% - Outstanding</option>
+                <option value="0.2">20% - Good</option>
+                <option value="0.15">15% - OK</option>
+                <option value="0.10">10% - Bad</option>
+                <option value="0.05">5% - Horrible</option>
+            </select>
+            <p class="border-top"></p>
+            <button onclick="calculate()">Calculate</button>
+        </div>
+        <div id="tip-amount"></div>
+    </div>
+    <footer class="devguicordeirofooter">
+        <p>
+          Created by: devguicordeiro - 
+          <script>document.write(new Date().getFullYear())</script>
+        </p>
+        <a href="https://github.com/devguicordeiro" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+    </footer>
+</body>
+</html>
